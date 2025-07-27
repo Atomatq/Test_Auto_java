@@ -1,7 +1,7 @@
 **ЗАДАНИЕ 1**. Анализ и исправление кода 
 Описание:
 Ниже представлен фрагмент автоматизированного теста. Найдите и исправьте ошибки, укажите слабые места, предложите улучшения (структурные, логические, стилевые, архитектурные).
-``
+```
 public class LoginTest {
     WebDriver driver;
 
@@ -26,19 +26,19 @@ public class LoginTest {
         driver.quit();
     }
 }
-``
+```
 
 **ЗАДАНИЕ 2**. Написание тестов 
 Описание:
 Есть метод, проверяющий корректность номера телефона. Напишите юнит-тесты на этот метод, покрыв граничные случаи и потенциальные баги.
 
-``
+```
 public class PhoneValidator {
     public static boolean isValid(String phoneNumber) {
         return phoneNumber.matches("^\\+\\d{1,3}\\d{10}$");
     }
 }
-``
+```
 Дополнительное условие:
 Придумайте и добавьте как минимум 2 новых тест-кейса, неочевидных, но потенциально важных.
 
@@ -47,7 +47,7 @@ public class PhoneValidator {
 Ниже представлен метод, который находит все дубликаты в списке.
 Отрефакторите метод так, чтобы он стал оптимальнее по времени и читаемости.
 
-``
+```
 public List<Integer> findDuplicates(List<Integer> numbers) {
     List<Integer> duplicates = new ArrayList<>();
     for (int i = 0; i < numbers.size(); i++) {
@@ -59,7 +59,7 @@ public List<Integer> findDuplicates(List<Integer> numbers) {
     }
     return duplicates;
 }
-``
+```
 
 **ЗАДАНИЕ 4**. API тестирование
 Описание:
@@ -67,13 +67,13 @@ public List<Integer> findDuplicates(List<Integer> numbers) {
 Метод GET /users?id=123 возвращает информацию о пользователе.
 Метод POST /users создает пользователя.
 Тело запроса на создание:
-``
+```
 {
   "name": "John",
   "email": "john@example.com",
   "age": 30
 }
-``
+```
 Задание:
 1.Опишите тест-кейсы для проверки POST /users (позитивные и негативные).
 2.Реализуйте 1–2 автотеста на Java, используя RestAssured или HttpClient.
