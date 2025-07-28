@@ -27,6 +27,7 @@ public class LoginTest {
     }
 }
 ```
+**Решение**: src/test/java/ui
 
 **ЗАДАНИЕ 2**. Написание тестов 
 Описание:
@@ -41,6 +42,8 @@ public class PhoneValidator {
 ```
 Дополнительное условие:
 Придумайте и добавьте как минимум 2 новых тест-кейса, неочевидных, но потенциально важных.
+
+**Решение**: src/test/java/unit/PhoneValidatorTests.java
 
 **ЗАДАНИЕ 3**. Оптимизация и рефакторинг 
 Описание:
@@ -60,6 +63,7 @@ public List<Integer> findDuplicates(List<Integer> numbers) {
     return duplicates;
 }
 ```
+**Решение**: src/main/java/org/example/Task3.java
 
 **ЗАДАНИЕ 4**. API тестирование
 Описание:
@@ -76,5 +80,16 @@ public List<Integer> findDuplicates(List<Integer> numbers) {
 ```
 Задание:
 1.Опишите тест-кейсы для проверки POST /users (позитивные и негативные).
+
 2.Реализуйте 1–2 автотеста на Java, используя RestAssured или HttpClient.
+
 3.Какие проверки вы считаете обязательными в API тестах?
+
+Ответ: 
+1. Проверка HTTP-статуса
+
+2. Проверка структуры ответа
+    
+3. Проверка данных в ответе
+
+**Решение**: src/test/java/api/UsersApiTests.java
